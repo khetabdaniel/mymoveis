@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WatchMovies - قائمتي</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">WatchMovies</a>
+    <nav class="nav">
+      <a href="index.html">الرئيسية</a>
+      <a href="genres.html">التصنيفات</a>
+      <a href="my-list.html" class="active">قائمتي</a>
+      <input type="search" class="search-bar" placeholder="ابحث عن الأفلام...">
+    </nav>
+  </header>
+
+  <main class="my-list-container">
+    <h2>قائمتي المفضلة</h2>
+    <div class="movie-grid" id="favorites-grid">
+      <!-- سيتم ملؤها بواسطة JavaScript -->
+    </div>
+    <div class="empty-state" id="empty-favorites" style="display: none;">
+      <h3>لا توجد أفلام في قائمتك المفضلة</h3>
+      <p>أضف أفلامك المفضلة لتظهر هنا</p>
+      <a href="index.html" class="btn">تصفح الأفلام</a>
+    </div>
+  </main>
+
+  <script src="nav.js"></script>
+  <script src="my-list.js"></script>
+</body>
+</html>

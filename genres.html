@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WatchMovies - تصنيفات الأفلام</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="genres.css">
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">WatchMovies</a>
+    <nav class="nav">
+      <a href="index.html">الرئيسية</a>
+      <a href="genres.html" class="active">التصنيفات</a>
+      <a href="my-list.html">قائمتي</a>
+      <input type="search" class="search-bar" placeholder="ابحث عن الأفلام...">
+    </nav>
+  </header>
+
+  <main class="genres-container">
+    <section class="genre-list">
+      <h2>التصنيفات</h2>
+      <div class="genre-buttons">
+        <button class="genre-btn" data-genre="action">أكشن</button>
+        <button class="genre-btn" data-genre="comedy">كوميدي</button>
+        <button class="genre-btn" data-genre="drama">دراما</button>
+        <button class="genre-btn" data-genre="scifi">خيال علمي</button>
+        <button class="genre-btn" data-genre="horror">رعب</button>
+        <button class="genre-btn" data-genre="romance">رومانسي</button>
+        <button class="genre-btn" data-genre="thriller">إثارة</button>
+        <button class="genre-btn" data-genre="animation">رسوم متحركة</button>
+      </div>
+    </section>
+
+    <section class="genre-movies">
+      <h2 id="genre-title">اختر تصنيفاً</h2>
+      <div class="movie-grid">
+        <!-- سيتم ملؤها بواسطة JavaScript -->
+      </div>
+    </section>
+  </main>
+
+  <script src="nav.js"></script>
+  <script src="genres.js"></script>
+</body>
+</html>
